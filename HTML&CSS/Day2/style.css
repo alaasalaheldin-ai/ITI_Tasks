@@ -1,0 +1,69 @@
+section{
+    margin: 100px;
+}
+section div{
+    width: 500px;
+    height: 50px;
+    margin: 20px;
+    padding: 15px;
+    text-indent: 10px;
+    text-align: left;
+    color: #eee;
+    background-color: blueviolet ;
+}
+div.mid{
+    background-color: rgba(138, 43, 226, 0.6) ;
+}
+div.low{
+    background-color: rgba(138, 43, 226, 0.1) ;
+}
+
+div.all-shape{
+    margin: 100px;
+    width: 400px;
+    height: 400px;
+    background-color: #eee ;
+} 
+div.shape1{
+    margin: 100px;
+    width: 400px;
+    height: 400px;
+    background-color: #eee ;
+    background-image: url(Screenshot\ 2026-08-13\ 134307.png);
+    background-repeat: no-repeat;
+    position: relative;
+}
+p{
+    margin: 20px;
+    padding: 2px;
+    color: #eee;
+    position: absolute;
+}
+div.shape2{
+    margin: 100px;
+    width: 400px;
+    height: 400px;
+    background-color: #eee ;
+    background-image: url(Screenshot\ 2026-08-13\ 134307.png);
+    background-repeat: no-repeat;
+    background-position: bottom left ;
+    position: relative;
+}
+div.shape3{
+    margin: 100px;
+    width: 400px;
+    height: 400px;
+    background-color: #eee ;
+    background-image: url(Screenshot\ 2026-08-13\ 134307.png);
+    background-repeat: no-repeat;
+    background-position: top right;
+    position: relative;
+}
+div.shape4{
+    margin: 100px;
+    width: 400px;
+    height: 400px;
+    background-color: #eee ;
+    background-image: url(Screenshot\ 2026-08-13\ 134307.png);
+    position: relative;
+} 

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<title>Parent Page</title>
+<style>
+    input {
+        display: block;
+        margin-bottom: 8px;
+    }
+</style>
+</head>
+<body>
+
+    <h1>Parent Page</h1>
+
+    <input type="button" value="2- Open Child" onclick="openChild()">
+    <input type="button" value="3- Close Child" onclick="closeChild()">
+    <input type="button" value="5- scrollBy Child" onclick="scrollByChild()">
+    <input type="button" value="4- scrollTo Child" onclick="scrollToChild()">
+    <input type="button" value="6- moveBy Child" onclick="moveByChild()">
+    <input type="button" value="7- focus on Child" onclick="focusChild()">
+    <input type="button" value="1- Close (Parent)" onclick="closeParent()">
+
+    <div id="log"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>

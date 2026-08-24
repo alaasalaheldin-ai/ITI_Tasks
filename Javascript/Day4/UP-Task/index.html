@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UP-Task</title>
+</head>
+<style>
+    #mainwrapper{
+        width: 800px;
+        border:  1px soild black;
+        /* background-color: red; */
+        padding: 10px;
+        margin: 10px auto;
+        text-align: center;
+
+
+    }
+    #imgwrapper{
+        width: 600px;
+        margin: 10px auto;
+    }
+    #controlswrapper{
+        border:  1px solid black;
+        padding: 10px;
+        margin: 10px auto;
+        text-align: center;
+    }
+    input{
+        width: 100px;
+        padding: 5px;
+        font-weight: bold;
+        margin-inline: 10px;
+        border-bottom-left-radius: 10px ;
+    }
+    input:focus{
+        background-color: pink;
+    }
+    img{
+        width: 400px;
+        height: 400px;
+    }
+</style>
+<body>
+    <div id="mainwrapper">
+        <div id="imgwrapper">
+            <img src="6.jpg" id="myimg">
+        </div>
+ <div id="controlswrapper">
+            <input type="button" value="Start" onclick="startSlideShow()">
+            <input type="button" value="Next" onclick="nextImg()">
+            <input type="button" value="Prev" onclick="prevImg()">
+            <input type="button" value="Stop"
+        onclick="stopSlideShow()">
+    </div>
+</div>
+    <script src="script.js"></script>
+</body>
+</html>
