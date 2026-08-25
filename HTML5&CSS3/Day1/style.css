@@ -1,0 +1,193 @@
+                /* task1 */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding-top: 100px;
+}
+
+.parent {
+    width: 450px;
+    height: 250px;
+    margin: 0 auto;
+    background-color: #eee;
+    padding: 30px;
+    border-radius: 6px;
+    text-align: center;
+    transition: transform 0.5s;
+    -webkit-transition: transform 0.5s;
+    -moz-transition: transform 0.5s;
+    -o-transition: transform 0.5s;
+}
+
+.parent h3 {
+    margin: 0 0 20px 0;
+    font-size: 18px;
+}
+
+.child {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.5s 0.5s;
+    -webkit-transition: -webkit-transform 0.5s 0.5s;
+    -moz-transition: -moz-transform 0.5s 0.5s;
+    -o-transition: -o-transform 0.5s 0.5s;
+}
+
+.child h3 {
+    margin: 0;
+    font-size: 18px;
+
+}
+
+.parent:hover {
+    transform: translateY(-20px);
+    -webkit-transform: translateY(-20px);
+    -moz-transform: translateY(-20px);
+    -o-transform: translateY(-20px);
+}
+.parent:hover .child {
+    transform: translateY(20px);
+    -webkit-transform: translateY(20px);
+    -moz-transform: translateY(20px);
+    -o-transform: translateY(20px);
+}
+                                /* task2 */
+
+.task2 div{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 3px solid #000;
+    background-color: #eee;
+    
+
+    display: inline-block;
+    margin: 0 15px;
+    position: relative;
+    
+
+    line-height: 100px;
+    text-align: center;
+    
+    box-shadow: -6px -6px 0 0 #e91e64, 6px 6px 0 0 #2196f3;
+    -webkit-box-shadow: -6px -6px 0 0 #e91e64, 6px 6px 0 0 #2196f3;
+    -moz-box-shadow: -6px -6px 0 0 #e91e64, 6px 6px 0 0 #2196f3;
+}
+
+
+.task2 div::before {
+    content: "Element";
+    font-weight: bold;
+    font-size: 16px;
+    color: #000;
+}
+
+
+.task2 div::after {
+    position: absolute;
+    top: -12px;
+    left: 38px;
+    width: 24px;
+    height: 24px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 50%;
+    line-height: 24px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.task2 div:nth-child(1)::after { content: "1"; }
+.task2 div:nth-child(2)::after { content: "2"; }
+.task2 div:nth-child(3)::after { content: "3"; }
+                            /* task3 */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    padding: 40px 0;
+    }
+
+table {
+    width: 700px;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background-color: #f4f4f4;
+    text-align: center;
+    border-bottom: 3px solid #00a896;
+    }
+
+caption {
+    padding-top: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #000;
+}
+
+
+thead th {
+    background-color: #404040;
+    color: #ffffff;
+    padding: 12px;
+    font-size: 16px;
+    border-right: 1px solid #555;
+}
+
+thead th:last-child {
+    border-right: none;
+}
+tbody td {
+    padding: 10px;
+    border: 1px solid white;
+    color: #333;
+    font-size: 15px;
+}
+
+
+tbody td img {
+    width: 45px;
+    height: 45px;
+    border: 2px solid #ccc;
+    padding: 2px;
+    background-color: #fff;
+    }
+
+
+button {
+    border: none;
+    color: #fff;
+    padding: 5px 10px;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 2px;
+}
+
+button.view {
+    background-color: #2196f3;
+}
+
+button.delete {
+    background-color: #e91e64;
+}
+
+                            /* task4 */
+.dad {
+    padding-top: 50px;
+}
+
+.dad .son span.title {
+    color: red;
+}
+
+.dad span.title {
+    color: blue;
+}
+
+.dad p,
+div.title {
+    color: green;
+}

@@ -1,0 +1,28 @@
+body {
+    margin: 0;
+    height: 100vh;
+    position: relative;
+}
+.container {
+    width: 500px;
+    height: 500px;
+    background-color: black;
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.center {
+    background-color: blue;
+    color: white;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
