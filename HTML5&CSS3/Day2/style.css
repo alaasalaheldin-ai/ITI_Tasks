@@ -1,13 +1,17 @@
 body {
     margin: 0;
-    height: 100vh;
+    background: #eee;
+    font-family: Arial, sans-serif;
+}
+                            /* task1 */
+.task1 {
     position: relative;
+    height: 100vh;
 }
 .container {
     width: 500px;
     height: 500px;
     background-color: black;
-    
     position: absolute;
     top: 50%;
     left: 50%;
@@ -25,4 +29,92 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+                            /* task2 */
+.flex {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    gap: 200px;
+    padding: 30px;
+}
+.box {
+    width: 15%;
+    color: white;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.box1 {
+    background:#ff9800; height: 300px;
+}
+.box2 {
+    background:#8bc44a; height: 300px; margin-top: 300px;
+}
+.box3 {
+    background:#795648; height: 300px;
+}
+.box4 {
+    background:#673ab8; height: 300px; margin-top: 300px;
+}
+
+.box1 { order: 2; 
+}
+.box2 { order: 3; 
+}
+.box3 { order: 4; 
+}
+.box4 { order: 1; 
+}
+
+                            /* task3 */
+
+.flexII {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    height: 100vh;
+    padding: 50px;
+}
+.one, .two, .three {
+    background-color: #009688;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    height: 280px;
+}
+.one {
+    width: 100px;
+    align-self: flex-end;
+}
+.two {
+    width: 60%;
+    align-self: flex-start;
+}
+.three {
+    width: 100px;
+    align-self: flex-end;
+}
+                        /* task4 */
+.flexIII {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 100vh;
+    padding: 50px;
+    justify-content: space-between;
+    align-content: space-between;
+}
+.num1, .num2, .num3, .num4, .num5, .num6 {
+    background-color: #f44336;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    width: 30%;
+    height: 80px;
 }
