@@ -1,13 +1,10 @@
 :root {
     --darkBlue: #19283f;
-    --green: #2ea8a9;
+    --green: #3bd6d2;
     --red: #ff3150;
     --yellow: #ffce54;
-    --white: #ffffff;
-    --grayText: #9aa4b2;
     --section: #edf6fb;
 }
-
 
 body {
     font-family: "Roboto", sans-serif;
@@ -15,10 +12,11 @@ body {
 }
 
 /* Navbar */
-.container .navbar {
+.navbar {
     background-color: var(--darkBlue);
     padding-top: 1.6rem;
     padding-bottom: 1.6rem;
+    
 }
 
 .navbar-brand img {
@@ -26,7 +24,7 @@ body {
 }
 
 .navbar-nav .nav-link {
-    color: var(--white);
+    color: white;
     font-weight: 500;
     font-size: 1.05rem;
     padding: 0.5rem 1rem;
@@ -37,78 +35,69 @@ body {
     color: var(--green);
 }
 
-.nav-divider {
-    width: 1px;
-    height: 24px;
-    background-color: rgba(255, 255, 255, 0.25);
-    margin: 0 0.5rem;
-}
 .nav-icon {
+    position: relative;
     color: var(--green);
+    padding-left: 1.5rem;
 }
 
-.btn-login {
-    background-color: var(--red);
-    color: var(--yellow);
-    border-radius: 50px;
-    padding: 0.6rem 1.75rem;
+.nav-icon::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1px;
+    height: 24px;
+    background-color: var(--green);
 }
 
 .nav-icon:hover {
-    color: var(--white);
+    color: white;
 }
 
 .navbar-toggler {
-    background-color: var(--white);
+    background-color: white;
     border-color: var(--green);
 }
 
-/* Buttons */
-.btn-login,
-.btn-cta {
+/* Button main */
+.btn-login{
     background-color: var(--red);
     color: var(--yellow);
     font-weight: 600;
-    border: none;
-    border-radius: 50px;
-    text-decoration: none;
-    transition: transform 0.15s ease, box-shadow 0.15s ease;
 }
 
-
-.btn-cta {
-    display: inline-block;
-    padding: 0.85rem 2.5rem;
-    font-size: 1.1rem;
+.btn-login {
+    padding: 0.6rem 1.75rem;
 }
 
-.btn-login:hover,
-.btn-cta:hover {
+.btn-login:hover{
     color: var(--yellow);
 }
 
-/*  land page */
+/* Land page */
 .land {
     background-color: var(--darkBlue);
-    min-height: 85vh;
+    min-height:90vh;
 }
 
 .land-title {
-    color: var(--white);
     font-weight: 700;
     font-size: 3.5rem;
     margin-bottom: 1rem;
 }
 
 .land-subtitle {
-    color: var(--grayText);
     font-size: 1.25rem;
     margin-bottom: 2.5rem;
 }
-/* Features */
-div.features{
-    background-color: var(--white);
+
+/* start Features */
+.features {
+    background-color: white;
 }
+
 .main-title h2 {
     font-weight: 700;
     font-size: 2rem;
@@ -116,7 +105,6 @@ div.features{
 }
 
 .main-title p {
-    color: var(--grayText);
     font-size: .95rem;
     letter-spacing: .05em;
 }
@@ -124,7 +112,7 @@ div.features{
 .main-title::after {
     content: "";
     display: block;
-    width: 60px;
+    width: 90px;
     height: 3px;
     background-color: var(--green);
     margin: 1rem auto 0;
@@ -152,7 +140,176 @@ div.features{
     font-weight: 700;
     font-size: 1.05rem;
 }
-/* our works */
-.our-work{
+
+/* start Our work */
+.our-work {
     background-color: var(--section);
 }
+
+.our-work ul .active {
+    background-color: var(--red);
+    color: var(--yellow);
+}
+
+.our-work li {
+    padding: .5rem 1rem;
+    cursor: pointer;
+}
+
+.our-work li:not(.active):hover {
+    color: var(--red);
+}
+.our-work .box{
+    padding: 5px;
+    position: relative;
+    overflow: hidden;
+}
+.our-work .box::before{
+    position: absolute;
+    background-color: rgba(59, 214, 210 , .7);
+    width: calc(100% - 10px);
+    height: calc(100% - 10px);
+    display: flex;
+    align-items: center;
+    color: white;
+    transform: translateX(calc(-100% - 10px));
+    transition: .5s;
+    font-weight: bold;
+    content: attr(data-work);
+    justify-content: center;
+    font-size: 1.5rem;
+
+}
+.our-work .box:hover::before{
+    transform: translateY(0);
+}
+/* end our work */
+/* start stuff */
+.stuff .desc{
+    max-width: 500px;
+}
+.stuff h3{
+    color: var(--darkBlue);
+}
+/* end stuff */
+/* start team section */
+.team{
+    background-color: var(--section);
+}
+.team .title h2{
+    color: var(--yellow);
+    font-weight: 500;
+}
+.team .container .row h3{
+    color: white;
+    background-color: var(--green);
+}
+.team .container .row p{
+    background-color: white;
+    margin-top: -7px;
+}
+/* end team */
+/* start new sec */
+.newsec{
+    background-color: var(--darkBlue);
+}
+.newsec h2{
+    color: white;
+}
+/* section end */
+/*  start blog */
+/* .blog-sec{
+    border: solid black 1px;
+}  */
+
+/* card */
+
+
+/* Newsletter */
+.newsletter {
+    background-color: var(--yellow);
+}
+
+.newsletter-input {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid white;
+    border-radius: 0;
+    padding: 0.5rem 0;
+    color: var(--darkBlue);
+}
+
+.newsletter-input::placeholder {
+    color: white;
+    opacity: 0.6;
+}
+
+.newsletter-input:focus {
+    box-shadow: none;
+    border-color: white;
+}
+
+/* end of newsletter */
+/* Footer */
+.site-footer {
+    background-color: var(--darkBlue);
+}
+.site-footer h5{
+    color: white;
+}
+.footer-links li {
+    margin-bottom: 0.75rem;
+}
+
+.footer-links a {
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    color: var(--green);
+}
+
+.text-yellow {
+    color: var(--yellow);
+}
+
+.btn-contact-email {
+    display: block;
+    background-color: var(--red);
+    color: var(--yellow);
+    font-weight: 600;
+    border-radius: 50px;
+    padding: 0.75rem 2rem;
+    text-decoration: none;
+    text-align: center;
+}
+
+.btn-contact-email:hover {
+    color: white;
+}
+
+.social-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.social-facebook {
+    background-color: #3b5998; 
+}
+.social-twitter  {
+    background-color: #1da1f2; 
+}
+.social-linkedin {
+    background-color: #0077b5; 
+}
+.social-youtube  {
+    background-color: #ff0000; 
+}
+/* the end */
